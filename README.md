@@ -60,7 +60,7 @@ Nós disponibilizamos uma simples API mockada para te ajudar no desenvolvimento 
 >
 >**Atenção**: estes serviços são mockados e foram construidos apenas >para a execução do teste aqui mencionado. Para que o serviço de login retorne sucesso você deve realizar a requisição com os dados abaixo:
 >~~~json
->    "email":"waldisney@dev-bpp.com.br"
+>    "email":"waldisney@brasilprepagos.com.br"
 >    "password":"Br@silPP123"
 >~~~
 
