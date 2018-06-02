@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rtlLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp">
+
+    <ImageView android:src="@mipmap/ic_brasil_prepagos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleY="3"
+        android:scaleX="3"
+        android:contentDescription="@string/strContentDescriptionLogo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:theme="@style/TextInputLabel">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textSize="19sp"
+                    android:textColor="@color/corPretaBase"
+                    android:hint="@string/strHintEmail" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:theme="@style/TextInputLabel"
+                android:layout_below="@+id/tilEmail"
+                android:visibility="visible">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textSize="19sp"
+                    android:textColor="@color/corPretaBase"
+                    android:hint="@string/strHintSenha"/>
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <com.rilixtech.materialfancybutton.MaterialFancyButton
+            android:id="@+id/btnLogar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            fancy:mfb_defaultColor="@color/corPretaBase"
+            fancy:mfb_focusColor="@color/corLaranjaPrincipal"
+            fancy:mfb_radius="5dp"
+            fancy:mfb_text="Logar"
+            fancy:mfb_textColor="@color/corLaranjaPrincipal"
+            fancy:mfb_textSize="19sp" />
+    </LinearLayout>
+</RelativeLayout>

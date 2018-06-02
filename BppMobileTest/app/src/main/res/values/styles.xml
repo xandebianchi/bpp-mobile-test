@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextInputLabel" parent="TextAppearance.AppCompat">
+        <!-- Cor do Hint e cor da label no estado False -->
+        <item name="android:textColorHint">@color/corPretaBase</item>
+        <item name="android:textSize">19sp</item>
+        <!-- Cor da label no stado TRUE e cor da barra no estado FALSO e TRUE -->
+        <item name="colorAccent">@color/corPretaBase</item>
+        <item name="colorControlNormal">@color/corPretaBase</item>
+        <item name="colorControlActivated">@color/corPretaBase</item>
+    </style>
+
+    <!-- Alert Dialog-->
+    <style name="DialogFadeInOut">
+        <item name="android:windowEnterAnimation">@anim/dialog_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_fade_out</item>
+    </style>
+</resources>

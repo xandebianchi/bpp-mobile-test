@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rtlForeground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@color/corFundo"
+    android:elevation="2dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtTransactionId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:includeFontPadding="false"
+        android:text="ID: "
+        android:textColor="@color/corTextoDialog"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtDateHour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:includeFontPadding="false"
+        android:text="Date/Hour: "
+        android:textColor="@color/corTextoDialog"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtMerchantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:includeFontPadding="false"
+        android:text="Local: "
+        android:textColor="@color/corTextoDialog"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:includeFontPadding="false"
+        android:text="Status: "
+        android:textColor="@color/corTextoDialog"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtTransactionAmmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:includeFontPadding="false"
+        android:text="Transaction Ammount:"
+        android:textColor="@color/corTextoDialog"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtBillingAmmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:includeFontPadding="false"
+        android:text="Billing Ammount:"
+        android:textColor="@color/corTextoDialog"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+    
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtTransactionName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:includeFontPadding="false"
+        android:text="Name: "
+        android:textColor="@color/corTextoDialog"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtMCCCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:includeFontPadding="false"
+        android:text="MCC Code: "
+        android:textColor="@color/corTextoDialog"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtMCCDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:includeFontPadding="false"
+        android:text="MCC Description: "
+        android:textColor="@color/corTextoDialog"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BppMobileTest</string>
+    <string name="strHintSenha">Senha</string>
+    <string name="strHintEmail">Email</string>
+    <string name="strContentDescriptionLogo">Logo do aplicativo</string>
+    <string name="strDetalhes">Detalhes</string>
+    <string name="str_ok">OK</string>
+    <string name="strSuccess">success</string>
+    <string name="strErro">Erro</string>
+</resources>

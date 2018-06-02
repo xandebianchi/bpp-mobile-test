@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnlFundo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rtlHeaderDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/corLaranjaPrincipal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imgIconDialog"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_alerta" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imgIconDialog"
+            android:layout_centerVertical="true"
+            android:text="Título"
+            android:textColor="@color/corTextoDialog"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:includeFontPadding="false" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewSeparador"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/corLaranjaPrincipal" />
+
+    <LinearLayout
+        android:id="@+id/lnlConteudoDialog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/corDescricaoTextoDialog">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:fadeScrollbars="false">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtDescricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descrição dummy"
+                android:textColor="@color/corTextoDialog"
+                android:textSize="18sp"
+                android:includeFontPadding="false" />
+        </ScrollView>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnDetalhes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:text="@string/strDetalhes"
+            android:drawableStart="@drawable/ic_seta_alert_dialog"
+            android:background="@color/corFundoBotaoDetalhes"
+            android:textColor="@color/corTextoDialog" />
+
+        <ScrollView
+            android:id="@+id/scvDetalhes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:fadeScrollbars="false"
+            android:layout_marginTop="8dp" >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtDetalhes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detalhes"
+                android:textColor="@color/corTextoDialog"
+                android:textSize="18sp"
+                android:includeFontPadding="false"
+                android:alpha="0.0" />
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnNegativeButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOTÃO 1"
+            android:textColor="@color/corTextoDialog"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnNeutralButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOTÃO 2"
+            android:textColor="@color/corTextoDialog"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnPositiveButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOTÃO 3"
+            android:textColor="@color/corTextoDialog"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
